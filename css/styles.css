@@ -28,13 +28,45 @@ a {
     text-decoration: none;
 }
 
-ul,li {
+ul {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 94px 0;
+}
 
 /* Header */
+.header {
+    padding: 24px 0 5px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-right: 93px;
+
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -45,24 +77,52 @@ ul,li {
     color: var(--blue-color);
 }
 
+.menu-list {
+    display: flex;
+    margin: 0 -25px;
+}
+
 .menu-list .link {
+    padding: 15px 0;
+
     font-weight: 500;
 }
+
+.menu-item {
+    margin: 0 25px;
+}
+
 .header .link:hover,
 .header .link:focus {
     color: var(--blue-color);
 }
-.list .link {
+
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-list > .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-list .link {
+    padding: 15px 0;
+
     color: var(--primary-text-color);
     font-weight: 500;
 }
 
-
 /* Hero */
 .hero {
+    padding: 200px 0;
+    text-align: center;
+
     background-color: var(--bg-color);
 }
 .hero .title {
+    margin-bottom: 30px;
+
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -72,6 +132,11 @@ ul,li {
     text-transform: uppercase;
 }
 .hero .btn {
+    min-width: 200px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -80,9 +145,22 @@ ul,li {
     background-color: var(--blue-color);
 }
 
-
 /* Features */
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+.features-item {
+    width: 270px;
+    margin: 0 20px;
+}
+.features-item:nth-child(n+5) {
+    margin-top: 30px;
+}
 .features-title {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
@@ -94,12 +172,26 @@ ul,li {
 }
 
 .section-title {
+    margin-bottom: 50px;
+
     font-size: 36px;
     font-weight: 700;
     line-height: 1.66;
     text-align: center;
 }
 
+/* Work */
+.section.section-work {
+    padding-top: 0;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.work-item {
+    margin: 15px;
+}
 
 /* Team */
 .team-title {
@@ -112,7 +204,6 @@ ul,li {
     font-size: 16px;
     line-height: 1.18;
 }
-
 
 /* Portfolio */
 .filter-btn {
@@ -127,7 +218,6 @@ ul,li {
     background-color: var(--blue-color);
 }
 
-
 /* Projects */
 .project-title {
     font-size: 18px;
@@ -140,7 +230,6 @@ ul,li {
     line-height: 1.87;
     color: var(--primary-text-color);
 }
-
 
 /* Footer */
 .footer {
@@ -164,4 +253,3 @@ ul,li {
 .footer-link:focus {
     color: var(--blue-color);
 }
-
