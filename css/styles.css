@@ -4,6 +4,7 @@
     --blue-color: #2196f3;
     --primary-white-color: #ffffff;
     --bg-color: #2f303a;
+    --secondary-bg-color: #F5F4FA;
 }
 
 body {
@@ -56,7 +57,10 @@ ul {
 
 /* Header */
 .header {
-    padding: 24px 0 5px;
+    padding: 32px 0;
+}
+.header.portfolio {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header .container {
@@ -149,14 +153,11 @@ ul {
 .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -20px;
+    margin: -20px;
 }
 .features-item {
     width: 270px;
-    margin: 0 20px;
-}
-.features-item:nth-child(n+5) {
-    margin-top: 30px;
+    margin: 20px;
 }
 .features-title {
     margin-bottom: 10px;
@@ -194,19 +195,51 @@ ul {
 }
 
 /* Team */
+.section-team {
+    background-color: var(--secondary-bg-color);
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.team-item {
+    width: 270px;
+    margin: 15px;
+    padding-bottom: 30px;   
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primary-white-color);
+}
 .team-title {
+    margin-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 .team-text {
+    margin-top: 10px;
+
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.18;
 }
 
 /* Portfolio */
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: -8px;
+    margin-bottom: 50px;
+}
 .filter-btn {
+    margin: 8px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -219,7 +252,29 @@ ul {
 }
 
 /* Projects */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.project-item {
+    width: 370px;
+    margin: 15px;
+    padding-bottom: 20px;
+
+    background-color: #ffffff;
+    border: 1px solid #EEEEEE;
+}
+.project-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.project-about {
+    padding-left: 24px;
+}
 .project-title {
+    margin-bottom: 4px;
+
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -233,15 +288,25 @@ ul {
 
 /* Footer */
 .footer {
+    padding: 60px 0;
+
     background-color: var(--bg-color);
 }
 .footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
     color: var(--primary-white-color);
 }
 .footer-address {
+    display: flex;
+    flex-direction: column;
+
     font-style: normal;
 }
 .footer-text {
+    margin-bottom: 9px;
+
     color: var(--primary-white-color);
     line-height: 1.71;
 }
@@ -249,7 +314,20 @@ ul {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-link:not(:last-child) {
+    margin-bottom: 9px;
+}
 .footer-link:hover,
 .footer-link:focus {
     color: var(--blue-color);
 }
+
+
+
+
+
+
+
+
+
+
