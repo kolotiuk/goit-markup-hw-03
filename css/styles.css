@@ -260,10 +260,13 @@ ul {
 .project-item {
     width: 370px;
     margin: 15px;
-    padding-bottom: 20px;
 
     background-color: #ffffff;
     border: 1px solid #EEEEEE;
+}
+.project-link {
+    display: block;
+    padding-bottom: 20px;
 }
 .project-img {
     width: 100%;
