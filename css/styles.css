@@ -46,7 +46,7 @@ ul {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -57,7 +57,7 @@ ul {
 
 /* Header */
 .header {
-    padding: 32px 0;
+    padding: 24px 0 25px;
 }
 .header.portfolio {
     border-bottom: 1px solid #ECECEC;
@@ -153,11 +153,11 @@ ul {
 .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -20px;
+    margin: -15px;
 }
 .features-item {
     width: 270px;
-    margin: 20px;
+    margin: 15px;
 }
 .features-title {
     margin-bottom: 10px;
@@ -177,7 +177,7 @@ ul {
 
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.66;
+    line-height: 1.16;
     text-align: center;
 }
 
@@ -232,11 +232,11 @@ ul {
 .filter {
     display: flex;
     justify-content: center;
-    margin: -8px;
+    margin: -4px;
     margin-bottom: 50px;
 }
 .filter-btn {
-    margin: 8px;
+    margin: 4px;
     padding: 6px 22px;
     border: 1px solid transparent;
     border-radius: 4px;
